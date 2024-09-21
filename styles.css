@@ -1,0 +1,57 @@
+#hacks {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+#hacks {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+#hacks ul {
+    list-style-type: none; /* لإزالة النقاط من القائمة */
+}
+
+#hacks li {
+    margin-bottom: 10px; /* مساحة بين العناصر */
+}
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تغيير الألوان</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* لون الخلفية */
+            color: #333; /* لون النص */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #007bff; /* لون العنوان */
+        }
+        button {
+            background-color: #28a745; /* لون زر */
+            color: white; /* لون نص الزر */
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838; /* لون الزر عند التمرير */
+        }
+    </style>
+</head>    <button onclick="changeColors()">تغيير الألوان</button>
+
+    <script>
+        function changeColors() {
+            document.body.style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+            document.body.style.color = '#' + Math.floor(Math.random()*16777215).toString(16);
+            document.querySelector('h1').style.color = '#' + Math.floor(Math.random()*16777215).toString(16);
+        
